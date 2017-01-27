@@ -1,0 +1,74 @@
+=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=
+CIS 120 Game Project Proposal
+PennKey: ____cax___
+Name of TA you consulted with: __Matt C________
+=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=
+
+===============
+=: Your Game :=
+===============
+
+- What game are you planning to implement? If it is a game of your own design,
+  or not especially well-known, provide a 2-3 sentence description of the game.
+A matching game. The name of my game will be called “Match Madness” and it is an already-existing game that is not well-known (a version of this game is called “Lian Lian Kan”. The game players find and matches two identical tiles (which then disappear) and they win by eliminating all the existing tiles. They can only match tiles that are within a 2-turn distance.
+
+- What classes and interfaces do you plan to create? How will the different
+  components of your game (the model, the GUI, etc.) interact?
+I plan to create a Tile class, which will store the image of the tile (apple, pear, banana, watermelon, etc) and its visibility — boolean (if it has been matched, then it becomes invisible).
+Another class will be the GameModel class, which draws the game at its current state.
+
+- What do you think will be the most challenging thing to implement?
+How to calculate the “distance” between two tiles based on the number of turns it has. 
+
+====================
+=: Core Concept 1 :=
+====================
+
+Concept 1: _2D array______
+
+- What specific feature of your game will be implemented using this concept?
+I will line up my tiles using a 2D array.
+
+- Why does it make sense to implement this feature with this concept? Justify
+  why this is a non-trivial application of the concept in question.
+The game board is composed of a 2D array of tiles. 
+
+====================
+=: Core Concept 2 :=
+====================
+
+Concept 2: ___Inheritance/Subtyping____
+
+- What specific feature of your game will be implemented using this concept?
+Tile class and its subclasses
+
+- Why does it make sense to implement this feature with this concept? Justify
+  why this is a non-trivial application of the concept in question.
+
+
+====================
+=: Core Concept 3 :=
+====================
+
+Concept 3: ___ File I/O____
+
+- What specific feature of your game will be implemented using this concept?
+The game will keep track of a list of top ten user names and high scores. The “high score” will be represented by the amount of time used for a player to complete the game. The lower the time spent, the better the score is. 
+
+- Why does it make sense to implement this feature with this concept? Justify
+  why this is a non-trivial application of the concept in question.
+Whenever a player achieves a time that’s lower than the 10th on the high score list, his or her score will be recorded in the file. This is an all-time top chart. 
+
+====================
+=: Core Concept 4 :=
+====================
+
+Concept 4: ___Testable Component___
+
+- What specific feature of your game will be implemented using this concept?
+I will test whether my path is the most optimal in terms of the least amount of turns. 
+
+- Why does it make sense to implement this feature with this concept? Justify
+  why this is a non-trivial application of the concept in question.
+Testing the optimal paths is important because this directly relates to the execution of the game. 
+
