@@ -8,3 +8,5 @@ Welcome to Matching Madness!
 1) the two tiles are of the same pattern 
 2) there's a path connecting the two tiles that requires less than 2 turns
 3) the path cannot jump over existing tiles
+
+• Enjoy playing this game!
